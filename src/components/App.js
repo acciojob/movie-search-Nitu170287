@@ -10,7 +10,7 @@ const App = () => {
       `https://omdbapi.com/?s=${searchInput}&apikey=d98b1a72`
     );
     const data = await response.json();
-    console.log(data.Search);
+    
     setMovies(data.Search)
     
   }
