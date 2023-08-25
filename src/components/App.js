@@ -25,8 +25,10 @@ const App = () => {
   return (
     <div>
       {/* Do not remove the main div */}
+      <form>
       <input type="text" onChange={(e) => setSearchInput(e.target.value)} />
       <button onClick={displayMovie}>Search</button>
+      </form>
       <ul>
       {error ? <p className="error">{error}</p> : movies.map((movie)=><div><li>{movie.Title}</li><img src={movie.Poster}/></div>)}
       </ul>
