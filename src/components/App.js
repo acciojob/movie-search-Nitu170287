@@ -39,12 +39,12 @@ const App = () => {
           <p className="error">{error}</p>
         ) : (
           movies.map((movie) => (
-            <div>
-              <li>
+            <li>
+              <div>
                 {movie.Title} ({movie.Year})
-              </li>
+              </div>
               <img src={movie.Poster} />
-            </div>
+            </li>
           ))
         )}
       </ul>
